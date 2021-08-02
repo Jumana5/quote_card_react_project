@@ -1,0 +1,88 @@
+
+$font: "Times New Roman", Times, serif;
+$cardColor: White;
+$ftrColor: black;
+$bgColor: Azure;
+
+$width: 30%;
+$height: 50%;
+
+button {
+	position: relative;
+	z-index:100000;
+}
+
+.back-gound{
+	background-color: black;
+  background-image: url("blackbg.jpg"); /* The image used - important! */
+  background-size: cover;
+  position: relative; /* Needed to position the cutout text in the middle of the image */
+  height: 100vh; /* Some height */
+  width: 100vw;
+}
+
+.ar{
+	direction: rtl;
+	.card{
+		.quote {text-align: right;}
+	}
+}
+
+
+.quote {
+	font-family: $font;
+	font-size: 1.25rem;
+}
+
+.author {
+	font-family: $font;
+	font-style: italic; 
+	font-size: 1rem;
+}
+
+.card{
+	font-family: $font;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: $cardColor;
+	align-text: center;
+	width: 100%;
+}
+
+.btn {
+	justify-content: center;
+	align-items: flex-end;
+	font-style: bold;
+	font-size: 1rem;
+}
+
+.hdr nav {
+	font-family: $font;
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-end;
+}
+
+.ftr{
+	height: 8vh;
+	font-size: 0.8rem;
+	display: flex;
+	align-items: flex-end;
+	background-color: $ftrColor;
+	color: white;
+}
+
+@media (orientation: landscape){
+	body{
+		background-color: whitesmoke;
+	}
+}
+
+@media (orientation: portrait){
+	body{
+
+		background-color: lightpink;
+	}
+}
